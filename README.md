@@ -1,11 +1,12 @@
-# Check HTML Links Github Action
+# [Check HTML Links Github Action](https://github.com/modernweb-dev/check-html-links-action)
+
 
 This action checks whether there are any dead links in the documentation of your repository. * Note: Does not test external links, only internal ones :).*
 Based of [check-html-links](https://www.npmjs.com/package/check-html-links) from [Modern Web](https://modern-web.dev/). 
 
 This action will run in a folder with html and js files. In other words, that comes **after** your Jekyll, Yarn, or any other compilation step.
 
-**Latest version : V02**
+**Latest version : V1**
 
 ## Inputs
 
@@ -21,8 +22,10 @@ The complete console output of the folder
 
 ## Example usage
 
-```
-uses: jlengrand/check-html-links-action@v1
+Snippet 
+
+```YAML
+uses: modernweb-dev/check-html-links-action@v1
 with:
   doc-folder: '_site'
 ```
@@ -40,7 +43,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: check-html-links-action step
       id: check-links
-      uses: jlengrand/check-html-links-action@v02
+      uses: modernweb-dev/check-html-links-action@v1
       with:
         doc-folder: 'test-site'
 ```
@@ -48,7 +51,7 @@ jobs:
 
 # Tests
 
-See test repository and latest status [here](https://github.com/jlengrand/check-html-links-action-test/actions).
+See test repository and latest status [here](https://github.com/modernweb-dev/check-html-links-action-test/actions).
 
 # LICENSE
 

@@ -1,25 +1,31 @@
 # Check HTML Links Github Action
 
-This action checks whether there are any dead links in the documentation of your repository.
+This action checks whether there are any dead links in the documentation of your repository. * Note: Does not test external links, only internal ones :).*
 Based of [check-html-links](https://www.npmjs.com/package/check-html-links) from [Modern Web](https://modern-web.dev/). 
+
+This action will run in a folder with html and js files. In other words, that comes **after** your Jekyll, Yarn, or any other compilation step.
 
 ## Inputs
 
-### `who-to-greet`
+### `doc-folder`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Optional** The location of the documentation folder. Default `"dist"`.
 
 ## Outputs
 
-### `time`
+### `result`
 
-The time we greeted you.
+The complete console output of the folder
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
+uses: jlengrand/check-html-links-action@v1
 with:
-  who-to-greet: 'Mona the Octocat'
+  doc-folder: '_site'
+
+# Tests
+
+See test repository and latest status [here](https://github.com/jlengrand/check-html-links-action-test/actions).
 
 # LICENSE
 

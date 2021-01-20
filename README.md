@@ -5,6 +5,8 @@ Based of [check-html-links](https://www.npmjs.com/package/check-html-links) from
 
 This action will run in a folder with html and js files. In other words, that comes **after** your Jekyll, Yarn, or any other compilation step.
 
+**Latest version : V02**
+
 ## Inputs
 
 ### `doc-folder`
@@ -19,9 +21,30 @@ The complete console output of the folder
 
 ## Example usage
 
+```
 uses: jlengrand/check-html-links-action@v1
 with:
   doc-folder: '_site'
+```
+
+Here is a complete Example workflow that will check the result of the folder `_dist` in the root of your repository on each push: 
+
+```YAML
+on: [push]
+
+jobs:
+  check_html_links_job:
+    runs-on: ubuntu-latest
+    name: A job to test check-html-links-action
+    steps:
+    - uses: actions/checkout@v2
+    - name: check-html-links-action step
+      id: check-links
+      uses: jlengrand/check-html-links-action@v02
+      with:
+        doc-folder: 'test-site'
+```
+
 
 # Tests
 

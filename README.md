@@ -1,10 +1,11 @@
 # [Check HTML Links Github Action](https://github.com/modernweb-dev/check-html-links-action)
 
 
-This action checks whether there are any dead links in the documentation of your repository. * Note: Does not test external links, only internal ones :).*
-Based of [check-html-links](https://www.npmjs.com/package/check-html-links) from [Modern Web](https://modern-web.dev/). 
+This action checks whether there are any dead links in the documentation of your repository. Based on [check-html-links](https://www.npmjs.com/package/check-html-links) from [Modern Web](https://modern-web.dev/). 
 
 This action will run in a folder with html and js files. In other words, that comes **after** your Jekyll, Yarn, or any other compilation step.
+
+*Note: Does not test external links, only internal ones :).*
 
 **Latest version : V1**
 

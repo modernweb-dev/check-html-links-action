@@ -5,9 +5,9 @@ inputs:
     description: 'location of the documentation folder'
     required: false
     default: 'dist'
-outputs:
-  result:
-    description: 'complete console output'
+# outputs:
+  # result:
+    # description: 'complete console output'
 runs:
   using: 'docker'
   image: 'Dockerfile'

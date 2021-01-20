@@ -1,4 +1,7 @@
 #!/bin/sh -l
 
-npx check-html-links $1
-$result="success"
+echo $GITHUB_WORKSPACE
+WORKDIR=$GITHUB_WORKSPACE/$1
+echo "Checking links in $WORKDIR"
+
+npx check-html-links $WORKDIR

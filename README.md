@@ -60,5 +60,4 @@ See test repository and latest status [here](https://github.com/modernweb-dev/ch
 
 # Author
 
-[Julien Lengrand-Lambert](https://twitter.com/jlengrand)
-
+[Modern Web](https://modern-web.dev)

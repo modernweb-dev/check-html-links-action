@@ -1,13 +1,14 @@
 name: 'Check HTML Links action'
 description: 'A simple way to check for dead links in the documentation of your repository'
+author: 'Modern Web (https://modern-web.dev)'
+branding:
+  icon: 'bookmark'  
+  color: 'blue' 
 inputs:
   doc-folder:
     description: 'location of the documentation folder'
     required: false
     default: 'dist'
-# outputs:
-  # result:
-    # description: 'complete console output'
 runs:
   using: 'docker'
   image: 'Dockerfile'
